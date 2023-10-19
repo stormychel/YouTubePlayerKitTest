@@ -11,6 +11,7 @@
 		EDB0C02C2AE1CB310026C834 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB0C02B2AE1CB310026C834 /* ContentView.swift */; };
 		EDB0C02E2AE1CB320026C834 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDB0C02D2AE1CB320026C834 /* Assets.xcassets */; };
 		EDB0C0312AE1CB320026C834 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDB0C0302AE1CB320026C834 /* Preview Assets.xcassets */; };
+		EDB0C03A2AE1CB5F0026C834 /* YouTubePlayerKit in Frameworks */ = {isa = PBXBuildFile; productRef = EDB0C0392AE1CB5F0026C834 /* YouTubePlayerKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDB0C03A2AE1CB5F0026C834 /* YouTubePlayerKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +87,9 @@
 			dependencies = (
 			);
 			name = YouTubePlayerKitTest;
+			packageProductDependencies = (
+				EDB0C0392AE1CB5F0026C834 /* YouTubePlayerKit */,
+			);
 			productName = YouTubePlayerKitTest;
 			productReference = EDB0C0262AE1CB310026C834 /* YouTubePlayerKitTest.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +118,9 @@
 				Base,
 			);
 			mainGroup = EDB0C01D2AE1CB300026C834;
+			packageReferences = (
+				EDB0C0382AE1CB5F0026C834 /* XCRemoteSwiftPackageReference "YouTubePlayerKit" */,
+			);
 			productRefGroup = EDB0C0272AE1CB310026C834 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -341,6 +349,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EDB0C0382AE1CB5F0026C834 /* XCRemoteSwiftPackageReference "YouTubePlayerKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SvenTiigi/YouTubePlayerKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EDB0C0392AE1CB5F0026C834 /* YouTubePlayerKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EDB0C0382AE1CB5F0026C834 /* XCRemoteSwiftPackageReference "YouTubePlayerKit" */;
+			productName = YouTubePlayerKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EDB0C01E2AE1CB300026C834 /* Project object */;
 }
